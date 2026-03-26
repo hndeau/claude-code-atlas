@@ -195,6 +195,32 @@
   }
  ],
  "schema_version": 1,
+ "sections": [
+  {
+   "id": "s01",
+   "summary": "Which source and revision this page was built from, when, and whether every published file matches its recorded checksum."
+  },
+  {
+   "id": "s02",
+   "summary": "How large the repository is: counts of tracked files, skills, agents, scripts, sections, hooks, documents, commits and weeks."
+  },
+  {
+   "id": "s03",
+   "summary": "How the tracked files divide into areas, and what each skill carries: scripts, sections and how it can be invoked."
+  },
+  {
+   "id": "s04",
+   "summary": "How the repository's agent types group by family, model and effort, beside its hooks, root scripts, documents and workflows."
+  },
+  {
+   "id": "s05",
+   "summary": "Week by week since the first commit: commits, merges and which areas changed, with the tracked-file count at each snapshot."
+  },
+  {
+   "id": "s06",
+   "summary": "What the export leaves out or renames before publishing, and the result of the repository's own lint run at this revision."
+  }
+ ],
  "skills": [
   {
    "context": null,
