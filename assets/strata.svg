@@ -1,20 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-label="share of changed files per area and week">
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="210" viewBox="0 0 470 210" role="img" aria-label="share of changed files per area and week">
 <style>
-svg{--accent:#3b6ea8;--ink:#57606a;--grid:#d0d7de;--bg:#ffffff}
-@media (prefers-color-scheme: dark){svg{--accent:#79a6d6;--ink:#9da7b3;--grid:#30363d;--bg:#0d1117}}
-.a{fill:var(--accent)}.t{fill:var(--ink);font:10px sans-serif}.g{stroke:var(--grid);fill:none}.s{stroke:var(--bg)}
+svg{--bg:#faf8f3;--surface:#faf8f3;--fg:#1f1d1a;--muted:#5e5a53;--accent:#9a3b1f;--rule:rgba(31,29,26,.3);--c1:#9a3b1f;--c2:#2d5992;--c3:#539661;--c4:#c9a227;--font-head:ui-serif, Georgia, "Times New Roman", serif;--font-body:ui-serif, Georgia, "Times New Roman", serif;--font-mono:ui-monospace, "Cascadia Code", Consolas, Menlo, monospace;--radius:0;--maxw:44rem;--wide:64rem;--t1:2.25rem;--t2:1.5rem;--t3:1.125rem;--t4:0.875rem}
+@media (prefers-color-scheme: dark){svg{--bg:#1c1b19;--surface:#1c1b19;--fg:#ece8df;--muted:#a8a29a;--accent:#e07a55;--rule:rgba(236,232,223,.3);--c1:#d9734f;--c2:#6597d3;--c3:#438551;--c4:#b0901d}}
+text{font:11px var(--font-body);fill:var(--muted)}
+.gr{stroke:var(--rule);stroke-width:1;fill:none}
+.b{fill:var(--c1)}
+.v{fill:var(--fg)}
+.ar{fill-opacity:.14;stroke:none}
+.ln{fill:none;stroke-width:1.5;stroke-linejoin:round}
+.k1{fill:var(--c1);stroke:var(--c1)}
+.k2{fill:var(--c2);stroke:var(--c2)}
+.k3{fill:var(--c3);stroke:var(--c3)}
+.k4{fill:var(--c4);stroke:var(--c4)}
+.ar.k1,.ar.k2,.ar.k3,.ar.k4{stroke:none}
+.ln.k1,.ln.k2,.ln.k3,.ln.k4{fill:none}
+.lb{fill:var(--fg);font-style:italic;paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+.c{fill:var(--c1)}
+.cv{fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
 </style>
-<polygon class="a s" fill-opacity="0.90" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,180.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,180.0"/>
-<polygon class="a s" fill-opacity="0.78" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,100.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
-<text class="t" x="646" y="143.0">ci</text>
-<polygon class="a s" fill-opacity="0.67" points="40.0,100.0 240.0,168.6 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
-<polygon class="a s" fill-opacity="0.55" points="40.0,100.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,168.6 40.0,100.0"/>
-<polygon class="a s" fill-opacity="0.43" points="40.0,70.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,100.0"/>
-<polygon class="a s" fill-opacity="0.32" points="40.0,70.0 240.0,111.4 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,70.0"/>
-<polygon class="a s" fill-opacity="0.20" points="40.0,20.0 240.0,20.0 440.0,180.0 640.0,20.0 640.0,100.0 440.0,180.0 240.0,111.4 40.0,70.0"/>
-<text class="t" x="646" y="63.0">skills</text>
-<text class="t" x="40.0" y="196" text-anchor="middle">2026-W10</text>
-<text class="t" x="240.0" y="196" text-anchor="middle">2026-W11</text>
-<text class="t" x="440.0" y="196" text-anchor="middle">2026-W12</text>
-<text class="t" x="640.0" y="196" text-anchor="middle">2026-W13</text>
+<g class="gr"><line x1="40" y1="20.0" x2="400" y2="20.0"/><line x1="40" y1="60.0" x2="400" y2="60.0"/><line x1="40" y1="100.0" x2="400" y2="100.0"/><line x1="40" y1="140.0" x2="400" y2="140.0"/><line x1="40" y1="180.0" x2="400" y2="180.0"/></g>
+<text x="34" y="24.0" text-anchor="end">100%</text>
+<text x="34" y="104.0" text-anchor="end">50%</text>
+<text x="34" y="184.0" text-anchor="end">0</text>
+<polygon class="ar k1" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,180.0 400.0,180.0 280.0,180.0 160.0,180.0 40.0,180.0"/>
+<polygon class="ar k2" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,100.0 400.0,180.0 280.0,180.0 160.0,180.0 40.0,120.0"/>
+<polygon class="ar k3" points="40.0,100.0 160.0,168.6 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,180.0 40.0,120.0"/>
+<polygon class="ar k4" points="40.0,100.0 160.0,145.7 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,168.6 40.0,100.0"/>
+<polygon class="ar k1" points="40.0,70.0 160.0,145.7 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,145.7 40.0,100.0"/>
+<polygon class="ar k2" points="40.0,70.0 160.0,111.4 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,145.7 40.0,70.0"/>
+<polygon class="ar k3" points="40.0,20.0 160.0,20.0 280.0,180.0 400.0,20.0 400.0,100.0 280.0,180.0 160.0,111.4 40.0,70.0"/>
+<polyline class="ln k1" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,180.0"/>
+<polyline class="ln k2" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k3" points="40.0,100.0 160.0,168.6 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k4" points="40.0,100.0 160.0,145.7 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k1" points="40.0,70.0 160.0,145.7 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k2" points="40.0,70.0 160.0,111.4 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k3" points="40.0,20.0 160.0,20.0 280.0,180.0 400.0,20.0"/>
+<text class="lb" x="46.0" y="154.0" text-anchor="start">agents</text>
+<text class="lb" x="406" y="144.0">ci</text>
+<text class="lb" x="46.0" y="114.0" text-anchor="start">docs</text>
+<text class="lb" x="160.0" y="161.1" text-anchor="middle">hooks</text>
+<text class="lb" x="46.0" y="89.0" text-anchor="start">root</text>
+<text class="lb" x="160.0" y="132.6" text-anchor="middle">scripts</text>
+<text class="lb" x="406" y="64.0">skills</text>
+<text x="40.0" y="200" text-anchor="start">2026-W10</text>
+<text x="160.0" y="200" text-anchor="middle">2026-W11</text>
+<text x="280.0" y="200" text-anchor="middle">2026-W12</text>
+<text x="400.0" y="200" text-anchor="end">2026-W13</text>
 </svg>

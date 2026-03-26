@@ -3,70 +3,92 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-ktuZFx+GFEuxIdCmWauJucimUGVahNul706MNiopXLA='; script-src 'sha256-ZrNcpQfkdzx/GHZAWFXUq1CKWBUIk/3zrmNY6Y4s0HM='; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-u+9MOkiAMFQzoIPIWUqeMZtDT+x6UOhWKWSEBJdmyQY='; script-src 'sha256-ZrNcpQfkdzx/GHZAWFXUq1CKWBUIk/3zrmNY6Y4s0HM='; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="light dark">
 <title>Atlas of stub/claude-code · synthetic</title>
 <style>
-/* atlas.css - inlined into index.html by the renderer; one accent per theme, three font sizes in the page text (the chart labels inside the SVGs keep their own), no external resources */
-:root{--accent:#3b6ea8;--ink:#1f2328;--muted:#57606a;--grid:#d0d7de;--bg:#ffffff;--panel:#f6f8fa}
-@media (prefers-color-scheme: dark){:root{--accent:#79a6d6;--ink:#e6edf3;--muted:#9da7b3;--grid:#30363d;--bg:#0d1117;--panel:#161b22}}
+/* atlas.css - Ledger Serif (D31): inlined into index.html by the renderer, which also copies the :root line, the dark block and the svg rules into each SVG asset's own style element; no external resources */
+:root{--bg:#faf8f3;--surface:#faf8f3;--fg:#1f1d1a;--muted:#5e5a53;--accent:#9a3b1f;--rule:rgba(31,29,26,.3);--c1:#9a3b1f;--c2:#2d5992;--c3:#539661;--c4:#c9a227;--font-head:ui-serif, Georgia, "Times New Roman", serif;--font-body:ui-serif, Georgia, "Times New Roman", serif;--font-mono:ui-monospace, "Cascadia Code", Consolas, Menlo, monospace;--radius:0;--maxw:44rem;--wide:64rem;--t1:2.25rem;--t2:1.5rem;--t3:1.125rem;--t4:0.875rem}
+@media (prefers-color-scheme: dark){:root{--bg:#1c1b19;--surface:#1c1b19;--fg:#ece8df;--muted:#a8a29a;--accent:#e07a55;--rule:rgba(236,232,223,.3);--c1:#d9734f;--c2:#6597d3;--c3:#438551;--c4:#b0901d}}
 @media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}
-html{background:var(--bg);color:var(--ink);font:1rem/1.5 system-ui,sans-serif}
-body{margin:0 auto;max-width:72rem;padding:0 1rem 3rem}
-a{color:var(--accent)}
-header,footer{padding:1.5rem 0;border-bottom:1px solid var(--grid)}
-footer{border:0;border-top:1px solid var(--grid);color:var(--muted);font-size:0.875rem}
-h1,h2,h3{font-weight:600;line-height:1.25}
-h1{font-size:1.5rem;margin:0 0 0.5rem}
-h2{font-size:1.5rem;margin:2.5rem 0 0.5rem;padding-top:0.5rem;border-top:1px solid var(--grid)}
-h3{font-size:1rem;margin:1.5rem 0 0.5rem}
-h3 span{color:var(--muted);font-weight:400}
-p{margin:0.5rem 0}
-.thesis{color:var(--muted);max-width:48rem}
-.lede{max-width:48rem}
-nav ul{display:flex;flex-wrap:wrap;gap:0.25rem 1.25rem;list-style:none;margin:0.5rem 0 0;padding:0}
-section{scroll-margin-top:1rem}
-.module{margin:0 0 1rem}
-table{border-collapse:collapse;width:100%;font-size:0.875rem}
-th,td{border-bottom:1px solid var(--grid);padding:0.3rem 0.6rem;text-align:left;vertical-align:top}
-th{color:var(--muted);font-weight:600}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--bg);color:var(--fg);font:1.0625rem/1.6 var(--font-body);-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 4rem}
+.col{max-width:var(--maxw);margin:0 auto}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.15em}
+h1,h2,h3{font-family:var(--font-head);font-weight:400;line-height:1.2;text-wrap:balance}
+h1{font-size:var(--t1);margin:0 0 1rem;letter-spacing:-.01em}
+h2{font-size:var(--t2);margin:.25rem 0 .75rem}
+h3{font-size:var(--t3);margin:2rem 0 .5rem;font-style:italic}
+h3 span{color:var(--muted)}
+p{margin:.5rem 0;max-width:65ch}
+header{padding:3.5rem 0 1.5rem;border-bottom:1px solid var(--rule)}
+.thesis{font-size:var(--t3);color:var(--muted)}
+nav{border-top:1px solid var(--rule);margin-top:1.5rem;padding-top:.5rem;font-size:var(--t4)}
+nav ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;font-variant:small-caps;letter-spacing:.06em}
+nav li::before{content:counter(list-item) "\2002";color:var(--muted)}
+section{margin-top:4rem;scroll-margin-top:1rem}
+.label{font-variant:small-caps;letter-spacing:.1em;color:var(--accent);font-size:var(--t4);margin:0;max-width:none;padding-top:.5rem;border-top:1px solid var(--rule)}
+.lede{font-size:var(--t3);color:var(--muted);margin-bottom:1rem}
+.module{margin:0}
+.scroll{overflow-x:auto}
+.wide{width:min(var(--wide), calc(100vw - 32px));margin-left:calc((100% - min(var(--wide), calc(100vw - 32px))) / 2);overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:var(--t4)/1.45 var(--font-mono);border-radius:var(--radius)}
+th,td{padding:.35rem .75rem .35rem 0;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+thead th{font-family:var(--font-body);font-variant:small-caps;letter-spacing:.06em;font-weight:400;color:var(--muted);border-bottom:1px solid var(--fg)}
 td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
-tbody tr:nth-child(even){background:var(--panel)}
-.sum{white-space:pre-line}
-figure{margin:1rem 0;overflow-x:auto}
-figure svg{max-width:100%;max-height:18rem;width:auto;height:auto}
-figcaption{color:var(--muted);font-size:0.875rem}
-.ok{color:var(--accent);font-weight:600}
+td code{font-family:var(--font-mono);word-break:break-all}
+.sum{white-space:pre-line;font-family:var(--font-body)}
+.ok{color:var(--accent)}
 .muted{color:var(--muted)}
-code{font-size:0.875rem}
-/* classes of the inlined SVG assets; each standalone .svg under assets/ carries the same rules in its own style element */
-svg .a{fill:var(--accent)}
-svg .t{fill:var(--ink);font:10px sans-serif}
-svg .g{stroke:var(--grid);fill:none}
-svg .s{stroke:var(--bg)}
+figure{margin:1.5rem 0}
+figure svg{display:block;width:100%;height:auto;max-height:22rem}
+figure.tall svg{max-height:none}
+figcaption{font-style:italic;color:var(--muted);font-size:var(--t4);border-top:1px solid var(--rule);padding-top:.25rem}
+footer{margin-top:4rem;border-top:1px solid var(--rule);padding-top:1rem;color:var(--muted);font-size:var(--t4)}
+@media (max-width:30rem){html{font-size:15px}h1{font-size:1.75rem}}
+/* chart rules: one per line, each starting "svg "; the renderer strips that prefix into every SVG asset's style element */
+svg text{font:11px var(--font-body);fill:var(--muted)}
+svg .gr{stroke:var(--rule);stroke-width:1;fill:none}
+svg .b{fill:var(--c1)}
+svg .v{fill:var(--fg)}
+svg .ar{fill-opacity:.14;stroke:none}
+svg .ln{fill:none;stroke-width:1.5;stroke-linejoin:round}
+svg .k1{fill:var(--c1);stroke:var(--c1)}
+svg .k2{fill:var(--c2);stroke:var(--c2)}
+svg .k3{fill:var(--c3);stroke:var(--c3)}
+svg .k4{fill:var(--c4);stroke:var(--c4)}
+svg .ar.k1,svg .ar.k2,svg .ar.k3,svg .ar.k4{stroke:none}
+svg .ln.k1,svg .ln.k2,svg .ln.k3,svg .ln.k4{fill:none}
+svg .lb{fill:var(--fg);font-style:italic;paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+svg .c{fill:var(--c1)}
+svg .cv{fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
 </style>
 </head>
 <body>
+<div class="col">
 <header>
 <h1>Atlas of stub/claude-code · synthetic</h1>
 <p class="thesis">The shape of a repository without its contents. Every value on this page is a name, a count or a date read from the git objects of one commit. File bodies, descriptions and headings stay private, and what is withheld is listed as such.</p>
-<nav aria-label="Sections"><ul>
+<nav aria-label="Sections"><ol>
 <li><a href="#s01">Status</a></li>
 <li><a href="#s02">Totals</a></li>
 <li><a href="#s03">Tree</a></li>
 <li><a href="#s04">Layers</a></li>
 <li><a href="#s05">History</a></li>
 <li><a href="#s06">Withheld</a></li>
-</ul></nav>
+</ol></nav>
 </header>
 <main>
 <section id="s01">
+<p class="label">Section i</p>
 <h2>Status</h2>
 <p class="lede">
 Which source and revision this page was built from, when, and whether every published file matches its recorded checksum.
 </p>
 <article class="module" id="m01">
 <h3>status <span>which commit this page describes</span></h3>
+<div class="scroll">
 <table>
 <thead><tr><th>Row</th><th>Value</th></tr></thead>
 <tbody>
@@ -78,9 +100,11 @@ Which source and revision this page was built from, when, and whether every publ
 <tr><td>exporter</td><td>0.1.0</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 <article class="module" id="m02">
 <h3>checksum <span>the data files beside this page</span></h3>
+<div class="scroll">
 <table>
 <thead><tr><th>File</th><th>Digest</th></tr></thead>
 <tbody>
@@ -89,15 +113,18 @@ Which source and revision this page was built from, when, and whether every publ
 <tr><td>CHECKSUM</td><td id="checksum" class="muted">not checked</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 </section>
 <section id="s02">
+<p class="label">Section ii</p>
 <h2>Totals</h2>
 <p class="lede">
 How large the repository is: counts of tracked files, skills, agents, scripts, sections, hooks, documents, commits and weeks.
 </p>
 <article class="module" id="m03">
 <h3>totals <span>what the tracked tree holds</span></h3>
+<div class="scroll">
 <table>
 <thead><tr><th>Measure</th><th class="n">Count</th></tr></thead>
 <tbody>
@@ -119,9 +146,11 @@ How large the repository is: counts of tracked files, skills, agents, scripts, s
 <tr><td>weeks</td><td class="n">4</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 <article class="module" id="m04">
 <h3>stats <span>sizes against the house limits</span></h3>
+<div class="wide">
 <table>
 <thead><tr><th>Measure</th><th class="n">Min</th><th class="n">Median</th><th class="n">Max</th><th class="n">Limit</th></tr></thead>
 <tbody>
@@ -130,15 +159,18 @@ How large the repository is: counts of tracked files, skills, agents, scripts, s
 <tr><td>script lines (total)</td><td class="n">17</td><td class="n">3</td><td class="n">4</td><td class="n">-</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 </section>
 <section id="s03">
+<p class="label">Section iii</p>
 <h2>Tree</h2>
 <p class="lede">
 How the tracked files divide into areas, and what each skill carries: scripts, sections and how it can be invoked.
 </p>
 <article class="module" id="m05">
 <h3>areas <span>tracked files per top-level area</span></h3>
+<div class="scroll">
 <table>
 <thead><tr><th>Area</th><th class="n">Files</th><th>Exported</th><th>Summary</th></tr></thead>
 <tbody>
@@ -151,9 +183,11 @@ How the tracked files divide into areas, and what each skill carries: scripts, s
 <tr><td>skills</td><td class="n">14</td><td>names</td><td class="muted">no summary</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 <article class="module" id="m06">
 <h3>skills <span>one row per skill directory</span></h3>
+<div class="wide">
 <table>
 <thead><tr><th>Skill</th><th>Kind</th><th class="n">Scripts</th><th class="n">Sections</th><th class="n">Examples</th><th class="n">Bytes</th><th class="n">Desc. chars</th><th>Invocable by</th><th class="n">Tools</th><th>Summary</th></tr></thead>
 <tbody>
@@ -167,15 +201,18 @@ How the tracked files divide into areas, and what each skill carries: scripts, s
 <tr><td>skill-hotel</td><td>skill</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">158</td><td class="n">22</td><td>user</td><td class="n">0</td><td class="muted">no summary</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 </section>
 <section id="s04">
+<p class="label">Section iv</p>
 <h2>Layers</h2>
 <p class="lede">
 How the repository&apos;s agent types group by family, model and effort, beside its hooks, root scripts, documents and workflows.
 </p>
 <article class="module" id="m07">
 <h3>agents <span>one row per agent type</span></h3>
+<div class="wide">
 <table>
 <thead><tr><th>Agent type</th><th>Family</th><th>Model</th><th>Effort</th><th class="n">Tools</th><th>Preloads</th><th>Summary</th></tr></thead>
 <tbody>
@@ -187,9 +224,11 @@ How the repository&apos;s agent types group by family, model and effort, beside 
 <tr><td>worker-lite</td><td>mechanical</td><td>haiku</td><td>low</td><td class="n">3</td><td>skill-alpha</td><td class="muted">no summary</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 <article class="module" id="m08">
 <h3>files <span>hooks, root scripts, docs and workflows</span></h3>
+<div class="wide">
 <table>
 <thead><tr><th>Kind</th><th>Name</th><th class="n">Lines</th><th class="n">Headings</th><th class="n">Jobs</th><th class="n">Steps</th></tr></thead>
 <tbody>
@@ -203,9 +242,11 @@ How the repository&apos;s agent types group by family, model and effort, beside 
 <tr><td>workflow</td><td>stub.yml</td><td class="n">-</td><td class="n">-</td><td class="n">1</td><td class="n">2</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 </section>
 <section id="s05">
+<p class="label">Section v</p>
 <h2>History</h2>
 <p class="lede">
 Week by week since the first commit: commits, merges and which areas changed, with the tracked-file count at each snapshot.
@@ -213,23 +254,27 @@ Week by week since the first commit: commits, merges and which areas changed, wi
 <article class="module" id="m09">
 <h3>weeks <span>commits per ISO week, recomputed from git on every export</span></h3>
 <figure>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 180" role="img" aria-label="commits per week">
-<line class="g" x1="40" y1="140" x2="264" y2="140"/>
-<rect class="a" x="48" y="80.0" width="40" height="60.0"/>
-<text class="t" x="68" y="76.0" text-anchor="middle">2</text>
-<text class="t" x="68" y="156" text-anchor="middle">2026-W10</text>
-<rect class="a" x="104" y="20.0" width="40" height="120.0"/>
-<text class="t" x="124" y="16.0" text-anchor="middle">4</text>
-<text class="t" x="124" y="156" text-anchor="middle">2026-W11</text>
-<rect class="a" x="160" y="140.0" width="40" height="0.0"/>
-<text class="t" x="180" y="136.0" text-anchor="middle">0</text>
-<text class="t" x="180" y="156" text-anchor="middle">2026-W12</text>
-<rect class="a" x="216" y="80.0" width="40" height="60.0"/>
-<text class="t" x="236" y="76.0" text-anchor="middle">2</text>
-<text class="t" x="236" y="156" text-anchor="middle">2026-W13</text>
+<svg width="290" height="190" viewBox="0 0 290 190" role="img" aria-label="commits per week">
+<g class="gr"><line x1="40" y1="20.0" x2="280" y2="20.0"/><line x1="40" y1="55.0" x2="280" y2="55.0"/><line x1="40" y1="90.0" x2="280" y2="90.0"/><line x1="40" y1="125.0" x2="280" y2="125.0"/><line x1="40" y1="160.0" x2="280" y2="160.0"/></g>
+<text x="34" y="24.0" text-anchor="end">4</text>
+<text x="34" y="94.0" text-anchor="end">2</text>
+<text x="34" y="164.0" text-anchor="end">0</text>
+<rect class="b" x="58" y="90.0" width="24" height="70.0"/>
+<text class="v" x="70" y="84.0" text-anchor="middle">2</text>
+<text x="70" y="178" text-anchor="middle">2026-W10</text>
+<rect class="b" x="118" y="20.0" width="24" height="140.0"/>
+<text class="v" x="130" y="14.0" text-anchor="middle">4</text>
+<text x="130" y="178" text-anchor="middle">2026-W11</text>
+<rect class="b" x="178" y="160.0" width="24" height="0.0"/>
+<text class="v" x="190" y="154.0" text-anchor="middle">0</text>
+<text x="190" y="178" text-anchor="middle">2026-W12</text>
+<rect class="b" x="238" y="90.0" width="24" height="70.0"/>
+<text class="v" x="250" y="84.0" text-anchor="middle">2</text>
+<text x="250" y="178" text-anchor="middle">2026-W13</text>
 </svg>
 <figcaption>Commits per week</figcaption>
 </figure>
+<div class="wide">
 <table>
 <thead><tr><th>Week</th><th>Start</th><th class="n">Commits</th><th class="n">First-parent</th><th class="n">Merges</th><th class="n">Files</th><th class="n">Skills</th><th class="n">Agents</th><th class="n">Scripts</th><th>Partial</th></tr></thead>
 <tbody>
@@ -239,106 +284,85 @@ Week by week since the first commit: commits, merges and which areas changed, wi
 <tr><td>2026-W13</td><td>2026-03-23</td><td class="n">2</td><td class="n">2</td><td class="n">0</td><td class="n">31</td><td class="n">8</td><td class="n">6</td><td class="n">6</td><td>yes</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 <article class="module" id="m10">
 <h3>activity <span>changed files per area and week</span></h3>
-<figure>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-label="share of changed files per area and week">
-<polygon class="a s" fill-opacity="0.90" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,180.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,180.0"/>
-<polygon class="a s" fill-opacity="0.78" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,100.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
-<text class="t" x="646" y="143.0">ci</text>
-<polygon class="a s" fill-opacity="0.67" points="40.0,100.0 240.0,168.6 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
-<polygon class="a s" fill-opacity="0.55" points="40.0,100.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,168.6 40.0,100.0"/>
-<polygon class="a s" fill-opacity="0.43" points="40.0,70.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,100.0"/>
-<polygon class="a s" fill-opacity="0.32" points="40.0,70.0 240.0,111.4 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,70.0"/>
-<polygon class="a s" fill-opacity="0.20" points="40.0,20.0 240.0,20.0 440.0,180.0 640.0,20.0 640.0,100.0 440.0,180.0 240.0,111.4 40.0,70.0"/>
-<text class="t" x="646" y="63.0">skills</text>
-<text class="t" x="40.0" y="196" text-anchor="middle">2026-W10</text>
-<text class="t" x="240.0" y="196" text-anchor="middle">2026-W11</text>
-<text class="t" x="440.0" y="196" text-anchor="middle">2026-W12</text>
-<text class="t" x="640.0" y="196" text-anchor="middle">2026-W13</text>
+<figure class="wide">
+<svg width="470" height="210" viewBox="0 0 470 210" role="img" aria-label="share of changed files per area and week">
+<g class="gr"><line x1="40" y1="20.0" x2="400" y2="20.0"/><line x1="40" y1="60.0" x2="400" y2="60.0"/><line x1="40" y1="100.0" x2="400" y2="100.0"/><line x1="40" y1="140.0" x2="400" y2="140.0"/><line x1="40" y1="180.0" x2="400" y2="180.0"/></g>
+<text x="34" y="24.0" text-anchor="end">100%</text>
+<text x="34" y="104.0" text-anchor="end">50%</text>
+<text x="34" y="184.0" text-anchor="end">0</text>
+<polygon class="ar k1" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,180.0 400.0,180.0 280.0,180.0 160.0,180.0 40.0,180.0"/>
+<polygon class="ar k2" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,100.0 400.0,180.0 280.0,180.0 160.0,180.0 40.0,120.0"/>
+<polygon class="ar k3" points="40.0,100.0 160.0,168.6 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,180.0 40.0,120.0"/>
+<polygon class="ar k4" points="40.0,100.0 160.0,145.7 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,168.6 40.0,100.0"/>
+<polygon class="ar k1" points="40.0,70.0 160.0,145.7 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,145.7 40.0,100.0"/>
+<polygon class="ar k2" points="40.0,70.0 160.0,111.4 280.0,180.0 400.0,100.0 400.0,100.0 280.0,180.0 160.0,145.7 40.0,70.0"/>
+<polygon class="ar k3" points="40.0,20.0 160.0,20.0 280.0,180.0 400.0,20.0 400.0,100.0 280.0,180.0 160.0,111.4 40.0,70.0"/>
+<polyline class="ln k1" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,180.0"/>
+<polyline class="ln k2" points="40.0,120.0 160.0,180.0 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k3" points="40.0,100.0 160.0,168.6 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k4" points="40.0,100.0 160.0,145.7 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k1" points="40.0,70.0 160.0,145.7 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k2" points="40.0,70.0 160.0,111.4 280.0,180.0 400.0,100.0"/>
+<polyline class="ln k3" points="40.0,20.0 160.0,20.0 280.0,180.0 400.0,20.0"/>
+<text class="lb" x="46.0" y="154.0" text-anchor="start">agents</text>
+<text class="lb" x="406" y="144.0">ci</text>
+<text class="lb" x="46.0" y="114.0" text-anchor="start">docs</text>
+<text class="lb" x="160.0" y="161.1" text-anchor="middle">hooks</text>
+<text class="lb" x="46.0" y="89.0" text-anchor="start">root</text>
+<text class="lb" x="160.0" y="132.6" text-anchor="middle">scripts</text>
+<text class="lb" x="406" y="64.0">skills</text>
+<text x="40.0" y="200" text-anchor="start">2026-W10</text>
+<text x="160.0" y="200" text-anchor="middle">2026-W11</text>
+<text x="280.0" y="200" text-anchor="middle">2026-W12</text>
+<text x="400.0" y="200" text-anchor="end">2026-W13</text>
 </svg>
 <figcaption>Share of changed files per area and week</figcaption>
 </figure>
-<figure>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414 264" role="img" aria-label="changed files per area and week">
-<text class="t" x="198" y="20" text-anchor="middle">2026-W10</text>
-<text class="t" x="254" y="20" text-anchor="middle">2026-W11</text>
-<text class="t" x="310" y="20" text-anchor="middle">2026-W12</text>
-<text class="t" x="366" y="20" text-anchor="middle">2026-W13</text>
-<text class="t" x="164" y="41" text-anchor="end">agents</text>
-<rect class="a" fill-opacity="1.00" x="171" y="31" width="54" height="14"/>
-<rect class="g" x="227" y="31" width="54" height="14"/>
-<rect class="g" x="283" y="31" width="54" height="14"/>
-<rect class="g" x="339" y="31" width="54" height="14"/>
-<text class="t" x="164" y="57" text-anchor="end">ci</text>
-<rect class="g" x="171" y="47" width="54" height="14"/>
-<rect class="g" x="227" y="47" width="54" height="14"/>
-<rect class="g" x="283" y="47" width="54" height="14"/>
-<rect class="a" fill-opacity="0.29" x="339" y="47" width="54" height="14"/>
-<text class="t" x="164" y="73" text-anchor="end">docs</text>
-<rect class="a" fill-opacity="0.43" x="171" y="63" width="54" height="14"/>
-<rect class="a" fill-opacity="0.29" x="227" y="63" width="54" height="14"/>
-<rect class="g" x="283" y="63" width="54" height="14"/>
-<rect class="g" x="339" y="63" width="54" height="14"/>
-<text class="t" x="164" y="89" text-anchor="end">hooks</text>
-<rect class="g" x="171" y="79" width="54" height="14"/>
-<rect class="a" fill-opacity="0.43" x="227" y="79" width="54" height="14"/>
-<rect class="g" x="283" y="79" width="54" height="14"/>
-<rect class="g" x="339" y="79" width="54" height="14"/>
-<text class="t" x="164" y="105" text-anchor="end">root</text>
-<rect class="a" fill-opacity="0.57" x="171" y="95" width="54" height="14"/>
-<rect class="g" x="227" y="95" width="54" height="14"/>
-<rect class="g" x="283" y="95" width="54" height="14"/>
-<rect class="g" x="339" y="95" width="54" height="14"/>
-<text class="t" x="164" y="121" text-anchor="end">scripts</text>
-<rect class="g" x="171" y="111" width="54" height="14"/>
-<rect class="a" fill-opacity="0.57" x="227" y="111" width="54" height="14"/>
-<rect class="g" x="283" y="111" width="54" height="14"/>
-<rect class="g" x="339" y="111" width="54" height="14"/>
-<text class="t" x="164" y="137" text-anchor="end">skill:skill-alpha</text>
-<rect class="a" fill-opacity="0.43" x="171" y="127" width="54" height="14"/>
-<rect class="g" x="227" y="127" width="54" height="14"/>
-<rect class="g" x="283" y="127" width="54" height="14"/>
-<rect class="g" x="339" y="127" width="54" height="14"/>
-<text class="t" x="164" y="153" text-anchor="end">skill:skill-bravo</text>
-<rect class="a" fill-opacity="0.29" x="171" y="143" width="54" height="14"/>
-<rect class="g" x="227" y="143" width="54" height="14"/>
-<rect class="g" x="283" y="143" width="54" height="14"/>
-<rect class="g" x="339" y="143" width="54" height="14"/>
-<text class="t" x="164" y="169" text-anchor="end">skill:skill-charlie</text>
-<rect class="a" fill-opacity="0.29" x="171" y="159" width="54" height="14"/>
-<rect class="g" x="227" y="159" width="54" height="14"/>
-<rect class="g" x="283" y="159" width="54" height="14"/>
-<rect class="g" x="339" y="159" width="54" height="14"/>
-<text class="t" x="164" y="185" text-anchor="end">skill:skill-delta</text>
-<rect class="a" fill-opacity="0.29" x="171" y="175" width="54" height="14"/>
-<rect class="g" x="227" y="175" width="54" height="14"/>
-<rect class="g" x="283" y="175" width="54" height="14"/>
-<rect class="g" x="339" y="175" width="54" height="14"/>
-<text class="t" x="164" y="201" text-anchor="end">skill:skill-echo</text>
-<rect class="g" x="171" y="191" width="54" height="14"/>
-<rect class="a" fill-opacity="0.43" x="227" y="191" width="54" height="14"/>
-<rect class="g" x="283" y="191" width="54" height="14"/>
-<rect class="g" x="339" y="191" width="54" height="14"/>
-<text class="t" x="164" y="217" text-anchor="end">skill:skill-foxtrot</text>
-<rect class="g" x="171" y="207" width="54" height="14"/>
-<rect class="a" fill-opacity="0.57" x="227" y="207" width="54" height="14"/>
-<rect class="g" x="283" y="207" width="54" height="14"/>
-<rect class="g" x="339" y="207" width="54" height="14"/>
-<text class="t" x="164" y="233" text-anchor="end">skill:skill-golf</text>
-<rect class="g" x="171" y="223" width="54" height="14"/>
-<rect class="a" fill-opacity="0.43" x="227" y="223" width="54" height="14"/>
-<rect class="g" x="283" y="223" width="54" height="14"/>
-<rect class="a" fill-opacity="0.29" x="339" y="223" width="54" height="14"/>
-<text class="t" x="164" y="249" text-anchor="end">skill:skill-hotel</text>
-<rect class="g" x="171" y="239" width="54" height="14"/>
-<rect class="a" fill-opacity="0.29" x="227" y="239" width="54" height="14"/>
-<rect class="g" x="283" y="239" width="54" height="14"/>
-<rect class="g" x="339" y="239" width="54" height="14"/>
+<figure class="tall">
+<svg width="404" height="264" viewBox="0 0 404 264" role="img" aria-label="changed files per area and week">
+<text x="198" y="20" text-anchor="middle">2026-W10</text>
+<text x="254" y="20" text-anchor="middle">2026-W11</text>
+<text x="310" y="20" text-anchor="middle">2026-W12</text>
+<text x="366" y="20" text-anchor="middle">2026-W13</text>
+<g class="gr"><line x1="10" y1="46.0" x2="394" y2="46.0"/><line x1="10" y1="62.0" x2="394" y2="62.0"/><line x1="10" y1="78.0" x2="394" y2="78.0"/><line x1="10" y1="94.0" x2="394" y2="94.0"/><line x1="10" y1="110.0" x2="394" y2="110.0"/><line x1="10" y1="126.0" x2="394" y2="126.0"/><line x1="10" y1="142.0" x2="394" y2="142.0"/><line x1="10" y1="158.0" x2="394" y2="158.0"/><line x1="10" y1="174.0" x2="394" y2="174.0"/><line x1="10" y1="190.0" x2="394" y2="190.0"/><line x1="10" y1="206.0" x2="394" y2="206.0"/><line x1="10" y1="222.0" x2="394" y2="222.0"/><line x1="10" y1="238.0" x2="394" y2="238.0"/><line x1="10" y1="254.0" x2="394" y2="254.0"/></g>
+<text x="164" y="41" text-anchor="end">agents</text>
+<rect class="c" fill-opacity="1.00" x="173" y="31" width="50" height="14"/><text class="cv" x="198" y="42" text-anchor="middle">6</text>
+<text x="164" y="57" text-anchor="end">ci</text>
+<rect class="c" fill-opacity="0.29" x="341" y="47" width="50" height="14"/><text class="cv" x="366" y="58" text-anchor="middle">1</text>
+<text x="164" y="73" text-anchor="end">docs</text>
+<rect class="c" fill-opacity="0.43" x="173" y="63" width="50" height="14"/><text class="cv" x="198" y="74" text-anchor="middle">2</text>
+<rect class="c" fill-opacity="0.29" x="229" y="63" width="50" height="14"/><text class="cv" x="254" y="74" text-anchor="middle">1</text>
+<text x="164" y="89" text-anchor="end">hooks</text>
+<rect class="c" fill-opacity="0.43" x="229" y="79" width="50" height="14"/><text class="cv" x="254" y="90" text-anchor="middle">2</text>
+<text x="164" y="105" text-anchor="end">root</text>
+<rect class="c" fill-opacity="0.57" x="173" y="95" width="50" height="14"/><text class="cv" x="198" y="106" text-anchor="middle">3</text>
+<text x="164" y="121" text-anchor="end">scripts</text>
+<rect class="c" fill-opacity="0.57" x="229" y="111" width="50" height="14"/><text class="cv" x="254" y="122" text-anchor="middle">3</text>
+<text x="164" y="137" text-anchor="end">skill:skill-alpha</text>
+<rect class="c" fill-opacity="0.43" x="173" y="127" width="50" height="14"/><text class="cv" x="198" y="138" text-anchor="middle">2</text>
+<text x="164" y="153" text-anchor="end">skill:skill-bravo</text>
+<rect class="c" fill-opacity="0.29" x="173" y="143" width="50" height="14"/><text class="cv" x="198" y="154" text-anchor="middle">1</text>
+<text x="164" y="169" text-anchor="end">skill:skill-charlie</text>
+<rect class="c" fill-opacity="0.29" x="173" y="159" width="50" height="14"/><text class="cv" x="198" y="170" text-anchor="middle">1</text>
+<text x="164" y="185" text-anchor="end">skill:skill-delta</text>
+<rect class="c" fill-opacity="0.29" x="173" y="175" width="50" height="14"/><text class="cv" x="198" y="186" text-anchor="middle">1</text>
+<text x="164" y="201" text-anchor="end">skill:skill-echo</text>
+<rect class="c" fill-opacity="0.43" x="229" y="191" width="50" height="14"/><text class="cv" x="254" y="202" text-anchor="middle">2</text>
+<text x="164" y="217" text-anchor="end">skill:skill-foxtrot</text>
+<rect class="c" fill-opacity="0.57" x="229" y="207" width="50" height="14"/><text class="cv" x="254" y="218" text-anchor="middle">3</text>
+<text x="164" y="233" text-anchor="end">skill:skill-golf</text>
+<rect class="c" fill-opacity="0.43" x="229" y="223" width="50" height="14"/><text class="cv" x="254" y="234" text-anchor="middle">2</text>
+<rect class="c" fill-opacity="0.29" x="341" y="223" width="50" height="14"/><text class="cv" x="366" y="234" text-anchor="middle">1</text>
+<text x="164" y="249" text-anchor="end">skill:skill-hotel</text>
+<rect class="c" fill-opacity="0.29" x="229" y="239" width="50" height="14"/><text class="cv" x="254" y="250" text-anchor="middle">1</text>
 </svg>
 <figcaption>Changed files per area and week</figcaption>
 </figure>
+<div class="scroll">
 <table>
 <thead><tr><th>Area</th><th class="n">Commits</th><th class="n">Files changed</th><th class="n">Weeks active</th></tr></thead>
 <tbody>
@@ -358,15 +382,18 @@ Week by week since the first commit: commits, merges and which areas changed, wi
 <tr><td>skill:skill-hotel</td><td class="n">1</td><td class="n">1</td><td class="n">1</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 </section>
 <section id="s06">
+<p class="label">Section vi</p>
 <h2>Withheld</h2>
 <p class="lede">
 What the export leaves out or renames before publishing, and the result of the repository&apos;s own lint run at this revision.
 </p>
 <article class="module" id="m11">
 <h3>withheld <span>what did not leave the repository</span></h3>
+<div class="wide">
 <table>
 <thead><tr><th>Withheld</th><th class="n">Count</th><th>Note</th></tr></thead>
 <tbody>
@@ -380,9 +407,11 @@ What the export leaves out or renames before publishing, and the result of the r
 <tr><td>strings scrubbed</td><td class="n">0</td><td>hosts, emails, addresses and paths replaced inside summaries</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 <article class="module" id="m12">
 <h3>lint <span>house-rule rows at the exported commit</span></h3>
+<div class="scroll">
 <table>
 <thead><tr><th>Row</th><th class="n">Count</th></tr></thead>
 <tbody>
@@ -393,12 +422,14 @@ What the export leaves out or renames before publishing, and the result of the r
 <tr><td>skip</td><td class="n">0</td></tr>
 </tbody>
 </table>
+</div>
 </article>
 </section>
 </main>
 <footer>
 <p>Build c91e2ba of stub/claude-code · synthetic, committed 2026-03-26. License: AGPL-3.0. Generated by exporter 0.1.0; re-running the same commit changes nothing.</p>
 </footer>
+</div>
 <script>
 // atlas.js - inlined into index.html by the renderer; no third-party code, no network beyond this site's own files.
 // Fills the CHECKSUM row of the STATUS module: fetches data/SHA256SUMS and every file it lists, hashes them with
