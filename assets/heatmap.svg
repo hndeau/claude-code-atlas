@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414 264" role="img" aria-label="changed files per area and week">
+<style>
+svg{--accent:#3b6ea8;--ink:#57606a;--grid:#d0d7de;--bg:#ffffff}
+@media (prefers-color-scheme: dark){svg{--accent:#79a6d6;--ink:#9da7b3;--grid:#30363d;--bg:#0d1117}}
+.a{fill:var(--accent)}.t{fill:var(--ink);font:10px sans-serif}.g{stroke:var(--grid);fill:none}.s{stroke:var(--bg)}
+</style>
+<text class="t" x="198" y="20" text-anchor="middle">2026-W10</text>
+<text class="t" x="254" y="20" text-anchor="middle">2026-W11</text>
+<text class="t" x="310" y="20" text-anchor="middle">2026-W12</text>
+<text class="t" x="366" y="20" text-anchor="middle">2026-W13</text>
+<text class="t" x="164" y="41" text-anchor="end">agents</text>
+<rect class="a" fill-opacity="1.00" x="171" y="31" width="54" height="14"/>
+<rect class="g" x="227" y="31" width="54" height="14"/>
+<rect class="g" x="283" y="31" width="54" height="14"/>
+<rect class="g" x="339" y="31" width="54" height="14"/>
+<text class="t" x="164" y="57" text-anchor="end">ci</text>
+<rect class="g" x="171" y="47" width="54" height="14"/>
+<rect class="g" x="227" y="47" width="54" height="14"/>
+<rect class="g" x="283" y="47" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="339" y="47" width="54" height="14"/>
+<text class="t" x="164" y="73" text-anchor="end">docs</text>
+<rect class="a" fill-opacity="0.43" x="171" y="63" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="227" y="63" width="54" height="14"/>
+<rect class="g" x="283" y="63" width="54" height="14"/>
+<rect class="g" x="339" y="63" width="54" height="14"/>
+<text class="t" x="164" y="89" text-anchor="end">hooks</text>
+<rect class="g" x="171" y="79" width="54" height="14"/>
+<rect class="a" fill-opacity="0.43" x="227" y="79" width="54" height="14"/>
+<rect class="g" x="283" y="79" width="54" height="14"/>
+<rect class="g" x="339" y="79" width="54" height="14"/>
+<text class="t" x="164" y="105" text-anchor="end">root</text>
+<rect class="a" fill-opacity="0.57" x="171" y="95" width="54" height="14"/>
+<rect class="g" x="227" y="95" width="54" height="14"/>
+<rect class="g" x="283" y="95" width="54" height="14"/>
+<rect class="g" x="339" y="95" width="54" height="14"/>
+<text class="t" x="164" y="121" text-anchor="end">scripts</text>
+<rect class="g" x="171" y="111" width="54" height="14"/>
+<rect class="a" fill-opacity="0.57" x="227" y="111" width="54" height="14"/>
+<rect class="g" x="283" y="111" width="54" height="14"/>
+<rect class="g" x="339" y="111" width="54" height="14"/>
+<text class="t" x="164" y="137" text-anchor="end">skill:skill-alpha</text>
+<rect class="a" fill-opacity="0.43" x="171" y="127" width="54" height="14"/>
+<rect class="g" x="227" y="127" width="54" height="14"/>
+<rect class="g" x="283" y="127" width="54" height="14"/>
+<rect class="g" x="339" y="127" width="54" height="14"/>
+<text class="t" x="164" y="153" text-anchor="end">skill:skill-bravo</text>
+<rect class="a" fill-opacity="0.29" x="171" y="143" width="54" height="14"/>
+<rect class="g" x="227" y="143" width="54" height="14"/>
+<rect class="g" x="283" y="143" width="54" height="14"/>
+<rect class="g" x="339" y="143" width="54" height="14"/>
+<text class="t" x="164" y="169" text-anchor="end">skill:skill-charlie</text>
+<rect class="a" fill-opacity="0.29" x="171" y="159" width="54" height="14"/>
+<rect class="g" x="227" y="159" width="54" height="14"/>
+<rect class="g" x="283" y="159" width="54" height="14"/>
+<rect class="g" x="339" y="159" width="54" height="14"/>
+<text class="t" x="164" y="185" text-anchor="end">skill:skill-delta</text>
+<rect class="a" fill-opacity="0.29" x="171" y="175" width="54" height="14"/>
+<rect class="g" x="227" y="175" width="54" height="14"/>
+<rect class="g" x="283" y="175" width="54" height="14"/>
+<rect class="g" x="339" y="175" width="54" height="14"/>
+<text class="t" x="164" y="201" text-anchor="end">skill:skill-echo</text>
+<rect class="g" x="171" y="191" width="54" height="14"/>
+<rect class="a" fill-opacity="0.43" x="227" y="191" width="54" height="14"/>
+<rect class="g" x="283" y="191" width="54" height="14"/>
+<rect class="g" x="339" y="191" width="54" height="14"/>
+<text class="t" x="164" y="217" text-anchor="end">skill:skill-foxtrot</text>
+<rect class="g" x="171" y="207" width="54" height="14"/>
+<rect class="a" fill-opacity="0.57" x="227" y="207" width="54" height="14"/>
+<rect class="g" x="283" y="207" width="54" height="14"/>
+<rect class="g" x="339" y="207" width="54" height="14"/>
+<text class="t" x="164" y="233" text-anchor="end">skill:skill-golf</text>
+<rect class="g" x="171" y="223" width="54" height="14"/>
+<rect class="a" fill-opacity="0.43" x="227" y="223" width="54" height="14"/>
+<rect class="g" x="283" y="223" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="339" y="223" width="54" height="14"/>
+<text class="t" x="164" y="249" text-anchor="end">skill:skill-hotel</text>
+<rect class="g" x="171" y="239" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="227" y="239" width="54" height="14"/>
+<rect class="g" x="283" y="239" width="54" height="14"/>
+<rect class="g" x="339" y="239" width="54" height="14"/>
+</svg>

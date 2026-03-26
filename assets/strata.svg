@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-label="share of changed files per area and week">
+<style>
+svg{--accent:#3b6ea8;--ink:#57606a;--grid:#d0d7de;--bg:#ffffff}
+@media (prefers-color-scheme: dark){svg{--accent:#79a6d6;--ink:#9da7b3;--grid:#30363d;--bg:#0d1117}}
+.a{fill:var(--accent)}.t{fill:var(--ink);font:10px sans-serif}.g{stroke:var(--grid);fill:none}.s{stroke:var(--bg)}
+</style>
+<polygon class="a s" fill-opacity="0.90" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,180.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,180.0"/>
+<polygon class="a s" fill-opacity="0.78" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,100.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
+<text class="t" x="646" y="143.0">ci</text>
+<polygon class="a s" fill-opacity="0.67" points="40.0,100.0 240.0,168.6 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
+<polygon class="a s" fill-opacity="0.55" points="40.0,100.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,168.6 40.0,100.0"/>
+<polygon class="a s" fill-opacity="0.43" points="40.0,70.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,100.0"/>
+<polygon class="a s" fill-opacity="0.32" points="40.0,70.0 240.0,111.4 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,70.0"/>
+<polygon class="a s" fill-opacity="0.20" points="40.0,20.0 240.0,20.0 440.0,180.0 640.0,20.0 640.0,100.0 440.0,180.0 240.0,111.4 40.0,70.0"/>
+<text class="t" x="646" y="63.0">skills</text>
+<text class="t" x="40.0" y="196" text-anchor="middle">2026-W10</text>
+<text class="t" x="240.0" y="196" text-anchor="middle">2026-W11</text>
+<text class="t" x="440.0" y="196" text-anchor="middle">2026-W12</text>
+<text class="t" x="640.0" y="196" text-anchor="middle">2026-W13</text>
+</svg>

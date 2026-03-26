@@ -1,0 +1,176 @@
+{
+ "first_commit_at": "2026-03-02T09:00:00Z",
+ "meta": {
+  "exporter_version": "0.1.0",
+  "source_committed_at": "2026-03-26",
+  "source_kind": "stub",
+  "source_repo": "stub/claude-code",
+  "source_sha_short": "c91e2ba"
+ },
+ "schema_version": 1,
+ "weeks": [
+  {
+   "areas": [
+    {
+     "area": "agents",
+     "commits": 1,
+     "files_changed": 6
+    },
+    {
+     "area": "docs",
+     "commits": 1,
+     "files_changed": 2
+    },
+    {
+     "area": "root",
+     "commits": 1,
+     "files_changed": 3
+    },
+    {
+     "area": "skill:skill-alpha",
+     "commits": 1,
+     "files_changed": 2
+    },
+    {
+     "area": "skill:skill-bravo",
+     "commits": 1,
+     "files_changed": 1
+    },
+    {
+     "area": "skill:skill-charlie",
+     "commits": 1,
+     "files_changed": 1
+    },
+    {
+     "area": "skill:skill-delta",
+     "commits": 1,
+     "files_changed": 1
+    }
+   ],
+   "commits": 2,
+   "first_parent": 2,
+   "merges": 0,
+   "partial": false,
+   "snapshot": {
+    "agents": 6,
+    "docs": 2,
+    "hooks": 0,
+    "scripts": 1,
+    "sections": 0,
+    "selftests": 0,
+    "skill_md_bytes_median": 161,
+    "skills": 4,
+    "tracked_files": 16
+   },
+   "start": "2026-03-02",
+   "week": "2026-W10"
+  },
+  {
+   "areas": [
+    {
+     "area": "docs",
+     "commits": 1,
+     "files_changed": 1
+    },
+    {
+     "area": "hooks",
+     "commits": 1,
+     "files_changed": 2
+    },
+    {
+     "area": "scripts",
+     "commits": 1,
+     "files_changed": 3
+    },
+    {
+     "area": "skill:skill-echo",
+     "commits": 1,
+     "files_changed": 2
+    },
+    {
+     "area": "skill:skill-foxtrot",
+     "commits": 2,
+     "files_changed": 3
+    },
+    {
+     "area": "skill:skill-golf",
+     "commits": 1,
+     "files_changed": 2
+    },
+    {
+     "area": "skill:skill-hotel",
+     "commits": 1,
+     "files_changed": 1
+    }
+   ],
+   "commits": 4,
+   "first_parent": 3,
+   "merges": 1,
+   "partial": false,
+   "snapshot": {
+    "agents": 6,
+    "docs": 2,
+    "hooks": 2,
+    "scripts": 6,
+    "sections": 1,
+    "selftests": 0,
+    "skill_md_bytes_median": 158,
+    "skills": 8,
+    "tracked_files": 29
+   },
+   "start": "2026-03-09",
+   "week": "2026-W11"
+  },
+  {
+   "areas": [],
+   "commits": 0,
+   "first_parent": 0,
+   "merges": 0,
+   "partial": false,
+   "snapshot": {
+    "agents": 6,
+    "docs": 2,
+    "hooks": 2,
+    "scripts": 6,
+    "sections": 1,
+    "selftests": 0,
+    "skill_md_bytes_median": 158,
+    "skills": 8,
+    "tracked_files": 29
+   },
+   "start": "2026-03-16",
+   "week": "2026-W12"
+  },
+  {
+   "areas": [
+    {
+     "area": "ci",
+     "commits": 1,
+     "files_changed": 1
+    },
+    {
+     "area": "skill:skill-golf",
+     "commits": 1,
+     "files_changed": 1
+    }
+   ],
+   "commits": 2,
+   "first_parent": 2,
+   "merges": 0,
+   "partial": true,
+   "snapshot": {
+    "agents": 6,
+    "docs": 2,
+    "hooks": 2,
+    "scripts": 6,
+    "sections": 1,
+    "selftests": 0,
+    "skill_md_bytes_median": 158,
+    "skills": 8,
+    "tracked_files": 31
+   },
+   "start": "2026-03-23",
+   "week": "2026-W13"
+  }
+ ]
+}

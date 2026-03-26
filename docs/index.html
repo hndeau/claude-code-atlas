@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-QtECwLPb3aOZIFNmCjJVzaYREaBhdVJEe0yKhnkfPaY='; script-src 'sha256-SMx+rA5UBX7OjtB3xyN6Z7LXGlieLE8/Xwfswhe3W9A='; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="light dark">
+<title>Atlas of stub/claude-code · synthetic</title>
+<style>
+/* atlas.css - inlined into docs/index.html by the renderer; one accent per theme, three font sizes in the page text (the chart labels inside the SVGs keep their own), no external resources */
+:root{--accent:#3b6ea8;--ink:#1f2328;--muted:#57606a;--grid:#d0d7de;--bg:#ffffff;--panel:#f6f8fa}
+@media (prefers-color-scheme: dark){:root{--accent:#79a6d6;--ink:#e6edf3;--muted:#9da7b3;--grid:#30363d;--bg:#0d1117;--panel:#161b22}}
+@media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}
+html{background:var(--bg);color:var(--ink);font:1rem/1.5 system-ui,sans-serif}
+body{margin:0 auto;max-width:72rem;padding:0 1rem 3rem}
+a{color:var(--accent)}
+header,footer{padding:1.5rem 0;border-bottom:1px solid var(--grid)}
+footer{border:0;border-top:1px solid var(--grid);color:var(--muted);font-size:0.875rem}
+h1,h2,h3{font-weight:600;line-height:1.25}
+h1{font-size:1.5rem;margin:0 0 0.5rem}
+h2{font-size:1.5rem;margin:2.5rem 0 0.5rem;padding-top:0.5rem;border-top:1px solid var(--grid)}
+h3{font-size:1rem;margin:1.5rem 0 0.5rem}
+h3 span{color:var(--muted);font-weight:400}
+p{margin:0.5rem 0}
+.thesis{color:var(--muted);max-width:48rem}
+nav ul{display:flex;flex-wrap:wrap;gap:0.25rem 1.25rem;list-style:none;margin:0.5rem 0 0;padding:0}
+section{scroll-margin-top:1rem}
+.module{margin:0 0 1rem}
+table{border-collapse:collapse;width:100%;font-size:0.875rem}
+th,td{border-bottom:1px solid var(--grid);padding:0.3rem 0.6rem;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr:nth-child(even){background:var(--panel)}
+.sum{white-space:pre-line}
+figure{margin:1rem 0;overflow-x:auto}
+figure svg{max-width:100%;max-height:18rem;width:auto;height:auto}
+figcaption{color:var(--muted);font-size:0.875rem}
+.ok{color:var(--accent);font-weight:600}
+.muted{color:var(--muted)}
+code{font-size:0.875rem}
+/* classes of the inlined SVG assets; each standalone .svg under assets/ carries the same rules in its own style element */
+svg .a{fill:var(--accent)}
+svg .t{fill:var(--ink);font:10px sans-serif}
+svg .g{stroke:var(--grid);fill:none}
+svg .s{stroke:var(--bg)}
+</style>
+</head>
+<body>
+<header>
+<h1>Atlas of stub/claude-code · synthetic</h1>
+<p class="thesis">The shape of a repository without its contents. Every value on this page is a name, a count or a date read from the git objects of one commit. File bodies, descriptions and headings stay private, and what is withheld is listed as such.</p>
+<nav aria-label="Sections"><ul>
+<li><a href="#s01">Status</a></li>
+<li><a href="#s02">Totals</a></li>
+<li><a href="#s03">Tree</a></li>
+<li><a href="#s04">Layers</a></li>
+<li><a href="#s05">History</a></li>
+<li><a href="#s06">Withheld</a></li>
+</ul></nav>
+</header>
+<main>
+<section id="s01">
+<h2>Status</h2>
+<article class="module" id="m01">
+<h3>status <span>which commit this page describes</span></h3>
+<table>
+<thead><tr><th>Row</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>source</td><td>stub/claude-code · synthetic</td></tr>
+<tr><td>build</td><td>c91e2ba</td></tr>
+<tr><td>committed</td><td>2026-03-26</td></tr>
+<tr><td>ISO week</td><td>2026-W13</td></tr>
+<tr><td>source kind</td><td>stub</td></tr>
+<tr><td>exporter</td><td>0.1.0</td></tr>
+</tbody>
+</table>
+</article>
+<article class="module" id="m02">
+<h3>checksum <span>the data files beside this page</span></h3>
+<table>
+<thead><tr><th>File</th><th>Digest</th></tr></thead>
+<tbody>
+<tr><td>data/atlas.json</td><td><code>f472b24aa2ea6937637794329c0b90a14d93ba5932a5c80ebf0a01cade26dc10</code></td></tr>
+<tr><td>data/history.json</td><td><code>913f338e06057cce95a6694a15157a77bc6ee37d46c2649a395cedb9d10fb6ea</code></td></tr>
+<tr><td>CHECKSUM</td><td id="checksum" class="muted">not checked</td></tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="s02">
+<h2>Totals</h2>
+<article class="module" id="m03">
+<h3>totals <span>what the tracked tree holds</span></h3>
+<table>
+<thead><tr><th>Measure</th><th class="n">Count</th></tr></thead>
+<tbody>
+<tr><td>agents</td><td class="n">6</td></tr>
+<tr><td>commits</td><td class="n">8</td></tr>
+<tr><td>docs</td><td class="n">2</td></tr>
+<tr><td>examples</td><td class="n">2</td></tr>
+<tr><td>hooks</td><td class="n">2</td></tr>
+<tr><td>merges</td><td class="n">1</td></tr>
+<tr><td>plugins</td><td class="n">0</td></tr>
+<tr><td>root scripts</td><td class="n">3</td></tr>
+<tr><td>scripts</td><td class="n">6</td></tr>
+<tr><td>sections</td><td class="n">1</td></tr>
+<tr><td>selftests</td><td class="n">0</td></tr>
+<tr><td>skill dirs</td><td class="n">8</td></tr>
+<tr><td>skill scripts</td><td class="n">3</td></tr>
+<tr><td>skills</td><td class="n">8</td></tr>
+<tr><td>tracked files</td><td class="n">31</td></tr>
+<tr><td>weeks</td><td class="n">4</td></tr>
+</tbody>
+</table>
+</article>
+<article class="module" id="m04">
+<h3>stats <span>sizes against the house limits</span></h3>
+<table>
+<thead><tr><th>Measure</th><th class="n">Min</th><th class="n">Median</th><th class="n">Max</th><th class="n">Limit</th></tr></thead>
+<tbody>
+<tr><td>description chars</td><td class="n">22</td><td class="n">42</td><td class="n">70</td><td class="n">320</td></tr>
+<tr><td>SKILL.md bytes</td><td class="n">133</td><td class="n">158</td><td class="n">197</td><td class="n">4500 · 6000 with sections</td></tr>
+<tr><td>script lines (total)</td><td class="n">17</td><td class="n">3</td><td class="n">4</td><td class="n">-</td></tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="s03">
+<h2>Tree</h2>
+<article class="module" id="m05">
+<h3>areas <span>tracked files per top-level area</span></h3>
+<table>
+<thead><tr><th>Area</th><th class="n">Files</th><th>Exported</th><th>Summary</th></tr></thead>
+<tbody>
+<tr><td>agents</td><td class="n">6</td><td>names</td><td class="muted">no summary</td></tr>
+<tr><td>ci</td><td class="n">1</td><td>names</td><td class="muted">no summary</td></tr>
+<tr><td>docs</td><td class="n">2</td><td>names</td><td class="muted">no summary</td></tr>
+<tr><td>hooks</td><td class="n">2</td><td>names</td><td class="muted">no summary</td></tr>
+<tr><td>root</td><td class="n">3</td><td>count</td><td class="muted">no summary</td></tr>
+<tr><td>scripts</td><td class="n">3</td><td>names</td><td class="muted">no summary</td></tr>
+<tr><td>skills</td><td class="n">14</td><td>names</td><td class="muted">no summary</td></tr>
+</tbody>
+</table>
+</article>
+<article class="module" id="m06">
+<h3>skills <span>one row per skill directory</span></h3>
+<table>
+<thead><tr><th>Skill</th><th>Kind</th><th class="n">Scripts</th><th class="n">Sections</th><th class="n">Examples</th><th class="n">Bytes</th><th class="n">Desc. chars</th><th>Invocable by</th><th class="n">Tools</th><th>Summary</th></tr></thead>
+<tbody>
+<tr><td>skill-alpha</td><td>skill</td><td class="n">1</td><td class="n">0</td><td class="n">0</td><td class="n">147</td><td class="n">42</td><td>user, model</td><td class="n">0</td><td class="muted">no summary</td></tr>
+<tr><td>skill-bravo</td><td>skill</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">197</td><td class="n">70</td><td>model</td><td class="n">0</td><td class="muted">no summary</td></tr>
+<tr><td>skill-charlie</td><td>skill</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">176</td><td class="n">24</td><td>user, model</td><td class="n">2</td><td class="muted">no summary</td></tr>
+<tr><td>skill-delta</td><td>skill</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">161</td><td class="n">42</td><td>user, model</td><td class="n">0</td><td class="muted">no summary</td></tr>
+<tr><td>skill-echo</td><td>skill</td><td class="n">1</td><td class="n">0</td><td class="n">0</td><td class="n">147</td><td class="n">44</td><td>user, model</td><td class="n">0</td><td class="muted">no summary</td></tr>
+<tr><td>skill-foxtrot</td><td>skill</td><td class="n">1</td><td class="n">1</td><td class="n">0</td><td class="n">133</td><td class="n">24</td><td>user, model</td><td class="n">0</td><td class="muted">no summary</td></tr>
+<tr><td>skill-golf</td><td>skill</td><td class="n">0</td><td class="n">0</td><td class="n">2</td><td class="n">158</td><td class="n">55</td><td>user, model</td><td class="n">0</td><td class="muted">no summary</td></tr>
+<tr><td>skill-hotel</td><td>skill</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">158</td><td class="n">22</td><td>user</td><td class="n">0</td><td class="muted">no summary</td></tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="s04">
+<h2>Layers</h2>
+<article class="module" id="m07">
+<h3>agents <span>one row per agent type</span></h3>
+<table>
+<thead><tr><th>Agent type</th><th>Family</th><th>Model</th><th>Effort</th><th class="n">Tools</th><th>Preloads</th><th>Summary</th></tr></thead>
+<tbody>
+<tr><td>checker</td><td>reasoning</td><td>opus</td><td>high</td><td class="n">3</td><td>skill-alpha</td><td class="muted">no summary</td></tr>
+<tr><td>checker-bulk</td><td>mechanical</td><td>sonnet</td><td>medium</td><td class="n">3</td><td>skill-alpha</td><td class="muted">no summary</td></tr>
+<tr><td>checker-lite</td><td>mechanical</td><td>haiku</td><td>low</td><td class="n">3</td><td>skill-alpha</td><td class="muted">no summary</td></tr>
+<tr><td>worker</td><td>reasoning</td><td>opus</td><td>medium</td><td class="n">3</td><td>skill-alpha</td><td class="muted">no summary</td></tr>
+<tr><td>worker-bulk</td><td>mechanical</td><td>sonnet</td><td>low</td><td class="n">3</td><td>skill-alpha</td><td class="muted">no summary</td></tr>
+<tr><td>worker-lite</td><td>mechanical</td><td>haiku</td><td>low</td><td class="n">3</td><td>skill-alpha</td><td class="muted">no summary</td></tr>
+</tbody>
+</table>
+</article>
+<article class="module" id="m08">
+<h3>files <span>hooks, root scripts, docs and workflows</span></h3>
+<table>
+<thead><tr><th>Kind</th><th>Name</th><th class="n">Lines</th><th class="n">Headings</th><th class="n">Jobs</th><th class="n">Steps</th></tr></thead>
+<tbody>
+<tr><td>hook</td><td>on-start.sh</td><td class="n">2</td><td class="n">-</td><td class="n">-</td><td class="n">-</td></tr>
+<tr><td>hook</td><td>on-stop.sh</td><td class="n">2</td><td class="n">-</td><td class="n">-</td><td class="n">-</td></tr>
+<tr><td>script</td><td>build-stub.sh</td><td class="n">2</td><td class="n">-</td><td class="n">-</td><td class="n">-</td></tr>
+<tr><td>script</td><td>report-stub.sh</td><td class="n">3</td><td class="n">-</td><td class="n">-</td><td class="n">-</td></tr>
+<tr><td>script</td><td>tidy-stub.sh</td><td class="n">2</td><td class="n">-</td><td class="n">-</td><td class="n">-</td></tr>
+<tr><td>doc</td><td>GUIDE.md</td><td class="n">7</td><td class="n">3</td><td class="n">-</td><td class="n">-</td></tr>
+<tr><td>doc</td><td>OVERVIEW.md</td><td class="n">7</td><td class="n">3</td><td class="n">-</td><td class="n">-</td></tr>
+<tr><td>workflow</td><td>stub.yml</td><td class="n">-</td><td class="n">-</td><td class="n">1</td><td class="n">2</td></tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="s05">
+<h2>History</h2>
+<article class="module" id="m09">
+<h3>weeks <span>commits per ISO week, recomputed from git on every export</span></h3>
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 180" role="img" aria-label="commits per week">
+<line class="g" x1="40" y1="140" x2="264" y2="140"/>
+<rect class="a" x="48" y="80.0" width="40" height="60.0"/>
+<text class="t" x="68" y="76.0" text-anchor="middle">2</text>
+<text class="t" x="68" y="156" text-anchor="middle">2026-W10</text>
+<rect class="a" x="104" y="20.0" width="40" height="120.0"/>
+<text class="t" x="124" y="16.0" text-anchor="middle">4</text>
+<text class="t" x="124" y="156" text-anchor="middle">2026-W11</text>
+<rect class="a" x="160" y="140.0" width="40" height="0.0"/>
+<text class="t" x="180" y="136.0" text-anchor="middle">0</text>
+<text class="t" x="180" y="156" text-anchor="middle">2026-W12</text>
+<rect class="a" x="216" y="80.0" width="40" height="60.0"/>
+<text class="t" x="236" y="76.0" text-anchor="middle">2</text>
+<text class="t" x="236" y="156" text-anchor="middle">2026-W13</text>
+</svg>
+<figcaption>Commits per week</figcaption>
+</figure>
+<table>
+<thead><tr><th>Week</th><th>Start</th><th class="n">Commits</th><th class="n">First-parent</th><th class="n">Merges</th><th class="n">Files</th><th class="n">Skills</th><th class="n">Agents</th><th class="n">Scripts</th><th>Partial</th></tr></thead>
+<tbody>
+<tr><td>2026-W10</td><td>2026-03-02</td><td class="n">2</td><td class="n">2</td><td class="n">0</td><td class="n">16</td><td class="n">4</td><td class="n">6</td><td class="n">1</td><td>no</td></tr>
+<tr><td>2026-W11</td><td>2026-03-09</td><td class="n">4</td><td class="n">3</td><td class="n">1</td><td class="n">29</td><td class="n">8</td><td class="n">6</td><td class="n">6</td><td>no</td></tr>
+<tr><td>2026-W12</td><td>2026-03-16</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">29</td><td class="n">8</td><td class="n">6</td><td class="n">6</td><td>no</td></tr>
+<tr><td>2026-W13</td><td>2026-03-23</td><td class="n">2</td><td class="n">2</td><td class="n">0</td><td class="n">31</td><td class="n">8</td><td class="n">6</td><td class="n">6</td><td>yes</td></tr>
+</tbody>
+</table>
+</article>
+<article class="module" id="m10">
+<h3>activity <span>changed files per area and week</span></h3>
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-label="share of changed files per area and week">
+<polygon class="a s" fill-opacity="0.90" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,180.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,180.0"/>
+<polygon class="a s" fill-opacity="0.78" points="40.0,120.0 240.0,180.0 440.0,180.0 640.0,100.0 640.0,180.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
+<text class="t" x="646" y="143.0">ci</text>
+<polygon class="a s" fill-opacity="0.67" points="40.0,100.0 240.0,168.6 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,180.0 40.0,120.0"/>
+<polygon class="a s" fill-opacity="0.55" points="40.0,100.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,168.6 40.0,100.0"/>
+<polygon class="a s" fill-opacity="0.43" points="40.0,70.0 240.0,145.7 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,100.0"/>
+<polygon class="a s" fill-opacity="0.32" points="40.0,70.0 240.0,111.4 440.0,180.0 640.0,100.0 640.0,100.0 440.0,180.0 240.0,145.7 40.0,70.0"/>
+<polygon class="a s" fill-opacity="0.20" points="40.0,20.0 240.0,20.0 440.0,180.0 640.0,20.0 640.0,100.0 440.0,180.0 240.0,111.4 40.0,70.0"/>
+<text class="t" x="646" y="63.0">skills</text>
+<text class="t" x="40.0" y="196" text-anchor="middle">2026-W10</text>
+<text class="t" x="240.0" y="196" text-anchor="middle">2026-W11</text>
+<text class="t" x="440.0" y="196" text-anchor="middle">2026-W12</text>
+<text class="t" x="640.0" y="196" text-anchor="middle">2026-W13</text>
+</svg>
+<figcaption>Share of changed files per area and week</figcaption>
+</figure>
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414 264" role="img" aria-label="changed files per area and week">
+<text class="t" x="198" y="20" text-anchor="middle">2026-W10</text>
+<text class="t" x="254" y="20" text-anchor="middle">2026-W11</text>
+<text class="t" x="310" y="20" text-anchor="middle">2026-W12</text>
+<text class="t" x="366" y="20" text-anchor="middle">2026-W13</text>
+<text class="t" x="164" y="41" text-anchor="end">agents</text>
+<rect class="a" fill-opacity="1.00" x="171" y="31" width="54" height="14"/>
+<rect class="g" x="227" y="31" width="54" height="14"/>
+<rect class="g" x="283" y="31" width="54" height="14"/>
+<rect class="g" x="339" y="31" width="54" height="14"/>
+<text class="t" x="164" y="57" text-anchor="end">ci</text>
+<rect class="g" x="171" y="47" width="54" height="14"/>
+<rect class="g" x="227" y="47" width="54" height="14"/>
+<rect class="g" x="283" y="47" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="339" y="47" width="54" height="14"/>
+<text class="t" x="164" y="73" text-anchor="end">docs</text>
+<rect class="a" fill-opacity="0.43" x="171" y="63" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="227" y="63" width="54" height="14"/>
+<rect class="g" x="283" y="63" width="54" height="14"/>
+<rect class="g" x="339" y="63" width="54" height="14"/>
+<text class="t" x="164" y="89" text-anchor="end">hooks</text>
+<rect class="g" x="171" y="79" width="54" height="14"/>
+<rect class="a" fill-opacity="0.43" x="227" y="79" width="54" height="14"/>
+<rect class="g" x="283" y="79" width="54" height="14"/>
+<rect class="g" x="339" y="79" width="54" height="14"/>
+<text class="t" x="164" y="105" text-anchor="end">root</text>
+<rect class="a" fill-opacity="0.57" x="171" y="95" width="54" height="14"/>
+<rect class="g" x="227" y="95" width="54" height="14"/>
+<rect class="g" x="283" y="95" width="54" height="14"/>
+<rect class="g" x="339" y="95" width="54" height="14"/>
+<text class="t" x="164" y="121" text-anchor="end">scripts</text>
+<rect class="g" x="171" y="111" width="54" height="14"/>
+<rect class="a" fill-opacity="0.57" x="227" y="111" width="54" height="14"/>
+<rect class="g" x="283" y="111" width="54" height="14"/>
+<rect class="g" x="339" y="111" width="54" height="14"/>
+<text class="t" x="164" y="137" text-anchor="end">skill:skill-alpha</text>
+<rect class="a" fill-opacity="0.43" x="171" y="127" width="54" height="14"/>
+<rect class="g" x="227" y="127" width="54" height="14"/>
+<rect class="g" x="283" y="127" width="54" height="14"/>
+<rect class="g" x="339" y="127" width="54" height="14"/>
+<text class="t" x="164" y="153" text-anchor="end">skill:skill-bravo</text>
+<rect class="a" fill-opacity="0.29" x="171" y="143" width="54" height="14"/>
+<rect class="g" x="227" y="143" width="54" height="14"/>
+<rect class="g" x="283" y="143" width="54" height="14"/>
+<rect class="g" x="339" y="143" width="54" height="14"/>
+<text class="t" x="164" y="169" text-anchor="end">skill:skill-charlie</text>
+<rect class="a" fill-opacity="0.29" x="171" y="159" width="54" height="14"/>
+<rect class="g" x="227" y="159" width="54" height="14"/>
+<rect class="g" x="283" y="159" width="54" height="14"/>
+<rect class="g" x="339" y="159" width="54" height="14"/>
+<text class="t" x="164" y="185" text-anchor="end">skill:skill-delta</text>
+<rect class="a" fill-opacity="0.29" x="171" y="175" width="54" height="14"/>
+<rect class="g" x="227" y="175" width="54" height="14"/>
+<rect class="g" x="283" y="175" width="54" height="14"/>
+<rect class="g" x="339" y="175" width="54" height="14"/>
+<text class="t" x="164" y="201" text-anchor="end">skill:skill-echo</text>
+<rect class="g" x="171" y="191" width="54" height="14"/>
+<rect class="a" fill-opacity="0.43" x="227" y="191" width="54" height="14"/>
+<rect class="g" x="283" y="191" width="54" height="14"/>
+<rect class="g" x="339" y="191" width="54" height="14"/>
+<text class="t" x="164" y="217" text-anchor="end">skill:skill-foxtrot</text>
+<rect class="g" x="171" y="207" width="54" height="14"/>
+<rect class="a" fill-opacity="0.57" x="227" y="207" width="54" height="14"/>
+<rect class="g" x="283" y="207" width="54" height="14"/>
+<rect class="g" x="339" y="207" width="54" height="14"/>
+<text class="t" x="164" y="233" text-anchor="end">skill:skill-golf</text>
+<rect class="g" x="171" y="223" width="54" height="14"/>
+<rect class="a" fill-opacity="0.43" x="227" y="223" width="54" height="14"/>
+<rect class="g" x="283" y="223" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="339" y="223" width="54" height="14"/>
+<text class="t" x="164" y="249" text-anchor="end">skill:skill-hotel</text>
+<rect class="g" x="171" y="239" width="54" height="14"/>
+<rect class="a" fill-opacity="0.29" x="227" y="239" width="54" height="14"/>
+<rect class="g" x="283" y="239" width="54" height="14"/>
+<rect class="g" x="339" y="239" width="54" height="14"/>
+</svg>
+<figcaption>Changed files per area and week</figcaption>
+</figure>
+<table>
+<thead><tr><th>Area</th><th class="n">Commits</th><th class="n">Files changed</th><th class="n">Weeks active</th></tr></thead>
+<tbody>
+<tr><td>agents</td><td class="n">1</td><td class="n">6</td><td class="n">1</td></tr>
+<tr><td>ci</td><td class="n">1</td><td class="n">1</td><td class="n">1</td></tr>
+<tr><td>docs</td><td class="n">2</td><td class="n">3</td><td class="n">2</td></tr>
+<tr><td>hooks</td><td class="n">1</td><td class="n">2</td><td class="n">1</td></tr>
+<tr><td>root</td><td class="n">1</td><td class="n">3</td><td class="n">1</td></tr>
+<tr><td>scripts</td><td class="n">1</td><td class="n">3</td><td class="n">1</td></tr>
+<tr><td>skill:skill-alpha</td><td class="n">1</td><td class="n">2</td><td class="n">1</td></tr>
+<tr><td>skill:skill-bravo</td><td class="n">1</td><td class="n">1</td><td class="n">1</td></tr>
+<tr><td>skill:skill-charlie</td><td class="n">1</td><td class="n">1</td><td class="n">1</td></tr>
+<tr><td>skill:skill-delta</td><td class="n">1</td><td class="n">1</td><td class="n">1</td></tr>
+<tr><td>skill:skill-echo</td><td class="n">1</td><td class="n">2</td><td class="n">1</td></tr>
+<tr><td>skill:skill-foxtrot</td><td class="n">2</td><td class="n">3</td><td class="n">1</td></tr>
+<tr><td>skill:skill-golf</td><td class="n">2</td><td class="n">3</td><td class="n">2</td></tr>
+<tr><td>skill:skill-hotel</td><td class="n">1</td><td class="n">1</td><td class="n">1</td></tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="s06">
+<h2>Withheld</h2>
+<article class="module" id="m11">
+<h3>withheld <span>what did not leave the repository</span></h3>
+<table>
+<thead><tr><th>Withheld</th><th class="n">Count</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td>file bodies</td><td class="n">31</td><td>every tracked file; only names and counts leave</td></tr>
+<tr><td>skill descriptions</td><td class="n">8</td><td>lengths are published, text is not</td></tr>
+<tr><td>agent descriptions</td><td class="n">6</td><td>one per agent type; text is not published</td></tr>
+<tr><td>doc headings</td><td class="n">6</td><td>counted per document, never kept</td></tr>
+<tr><td>summaries published</td><td class="n">0</td><td>owner-approved lines; the other rows carry none</td></tr>
+<tr><td>names renamed</td><td class="n">0</td><td>redact.tsv rename rows, applied to every history week</td></tr>
+<tr><td>names dropped</td><td class="n">0</td><td>redact.tsv drop rows; their history is attributed to other</td></tr>
+<tr><td>strings scrubbed</td><td class="n">0</td><td>hosts, emails, addresses and paths replaced inside summaries</td></tr>
+</tbody>
+</table>
+</article>
+<article class="module" id="m12">
+<h3>lint <span>house-rule rows at the exported commit</span></h3>
+<table>
+<thead><tr><th>Row</th><th class="n">Count</th></tr></thead>
+<tbody>
+<tr><td>ran</td><td class="n">no</td></tr>
+<tr><td>ok</td><td class="n">0</td></tr>
+<tr><td>note</td><td class="n">0</td></tr>
+<tr><td>off</td><td class="n">0</td></tr>
+<tr><td>skip</td><td class="n">0</td></tr>
+</tbody>
+</table>
+</article>
+</section>
+</main>
+<footer>
+<p>Build c91e2ba of stub/claude-code · synthetic, committed 2026-03-26. License: AGPL-3.0. Generated by exporter 0.1.0; re-running the same commit changes nothing.</p>
+</footer>
+<script>
+// atlas.js - inlined into docs/index.html by the renderer; no third-party code, no network beyond this site's own files.
+// Fills the CHECKSUM row of the STATUS module: fetches data/SHA256SUMS and every file it lists, hashes them with
+// SubtleCrypto and compares. The row is rendered as "not checked"; it changes only when the sums file and every
+// listed file were fetched (OK or OFF). When they are not reachable from the page origin (a Pages site served from
+// docs/ alone), or the sums file lists nothing, the row keeps its rendered text.
+(function () {
+  "use strict";
+  var cell = document.getElementById("checksum");
+  if (!cell || !window.crypto || !window.crypto.subtle || !window.fetch) { return; }
+  function hex(buf) {
+    var out = "", view = new Uint8Array(buf);
+    for (var i = 0; i < view.length; i++) { out += (view[i] < 16 ? "0" : "") + view[i].toString(16); }
+    return out;
+  }
+  function sha(url) {
+    return fetch(url, { cache: "no-store" }).then(function (r) {
+      if (!r.ok) { throw new Error(url); }
+      return r.arrayBuffer();
+    }).then(function (b) { return window.crypto.subtle.digest("SHA-256", b); }).then(hex);
+  }
+  fetch("../data/SHA256SUMS", { cache: "no-store" }).then(function (r) {
+    if (!r.ok) { throw new Error("sums"); }
+    return r.text();
+  }).then(function (text) {
+    var rows = text.split("\n").filter(function (l) { return l.length > 66; }).map(function (l) {
+      return { want: l.slice(0, 64), path: l.slice(66) };
+    });
+    if (rows.length === 0) { throw new Error("empty"); }
+    return Promise.all(rows.map(function (row) {
+      return sha("../" + row.path).then(function (got) { return got === row.want; });
+    }));
+  }).then(function (results) {
+    var bad = results.filter(function (ok) { return !ok; }).length;
+    cell.textContent = bad === 0 ? "OK" : "OFF";
+    cell.className = bad === 0 ? "ok" : "";
+    cell.setAttribute("data-files", String(results.length));
+    cell.setAttribute("data-mismatch", String(bad));
+  }).catch(function () { /* unreachable or empty: the rendered "not checked" stays */ });
+})();
+</script>
+</body>
+</html>

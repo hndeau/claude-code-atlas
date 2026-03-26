@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 180" role="img" aria-label="commits per week">
+<style>
+svg{--accent:#3b6ea8;--ink:#57606a;--grid:#d0d7de;--bg:#ffffff}
+@media (prefers-color-scheme: dark){svg{--accent:#79a6d6;--ink:#9da7b3;--grid:#30363d;--bg:#0d1117}}
+.a{fill:var(--accent)}.t{fill:var(--ink);font:10px sans-serif}.g{stroke:var(--grid);fill:none}.s{stroke:var(--bg)}
+</style>
+<line class="g" x1="40" y1="140" x2="264" y2="140"/>
+<rect class="a" x="48" y="80.0" width="40" height="60.0"/>
+<text class="t" x="68" y="76.0" text-anchor="middle">2</text>
+<text class="t" x="68" y="156" text-anchor="middle">2026-W10</text>
+<rect class="a" x="104" y="20.0" width="40" height="120.0"/>
+<text class="t" x="124" y="16.0" text-anchor="middle">4</text>
+<text class="t" x="124" y="156" text-anchor="middle">2026-W11</text>
+<rect class="a" x="160" y="140.0" width="40" height="0.0"/>
+<text class="t" x="180" y="136.0" text-anchor="middle">0</text>
+<text class="t" x="180" y="156" text-anchor="middle">2026-W12</text>
+<rect class="a" x="216" y="80.0" width="40" height="60.0"/>
+<text class="t" x="236" y="76.0" text-anchor="middle">2</text>
+<text class="t" x="236" y="156" text-anchor="middle">2026-W13</text>
+</svg>

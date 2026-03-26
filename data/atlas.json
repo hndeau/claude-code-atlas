@@ -1,0 +1,418 @@
+{
+ "agents": [
+  {
+   "effort": "high",
+   "family": "reasoning",
+   "model": "opus",
+   "name": "checker",
+   "preload": [
+    "skill-alpha"
+   ],
+   "tools": [
+    "Bash",
+    "Grep",
+    "Read"
+   ]
+  },
+  {
+   "effort": "medium",
+   "family": "mechanical",
+   "model": "sonnet",
+   "name": "checker-bulk",
+   "preload": [
+    "skill-alpha"
+   ],
+   "tools": [
+    "Bash",
+    "Grep",
+    "Read"
+   ]
+  },
+  {
+   "effort": "low",
+   "family": "mechanical",
+   "model": "haiku",
+   "name": "checker-lite",
+   "preload": [
+    "skill-alpha"
+   ],
+   "tools": [
+    "Bash",
+    "Grep",
+    "Read"
+   ]
+  },
+  {
+   "effort": "medium",
+   "family": "reasoning",
+   "model": "opus",
+   "name": "worker",
+   "preload": [
+    "skill-alpha"
+   ],
+   "tools": [
+    "Bash",
+    "Grep",
+    "Read"
+   ]
+  },
+  {
+   "effort": "low",
+   "family": "mechanical",
+   "model": "sonnet",
+   "name": "worker-bulk",
+   "preload": [
+    "skill-alpha"
+   ],
+   "tools": [
+    "Bash",
+    "Grep",
+    "Read"
+   ]
+  },
+  {
+   "effort": "low",
+   "family": "mechanical",
+   "model": "haiku",
+   "name": "worker-lite",
+   "preload": [
+    "skill-alpha"
+   ],
+   "tools": [
+    "Bash",
+    "Grep",
+    "Read"
+   ]
+  }
+ ],
+ "areas": [
+  {
+   "exported": "names",
+   "files": 6,
+   "id": "agents"
+  },
+  {
+   "exported": "names",
+   "files": 1,
+   "id": "ci"
+  },
+  {
+   "exported": "names",
+   "files": 2,
+   "id": "docs"
+  },
+  {
+   "exported": "names",
+   "files": 2,
+   "id": "hooks"
+  },
+  {
+   "exported": "count",
+   "files": 3,
+   "id": "root"
+  },
+  {
+   "exported": "names",
+   "files": 3,
+   "id": "scripts"
+  },
+  {
+   "exported": "names",
+   "files": 14,
+   "id": "skills"
+  }
+ ],
+ "ci": [
+  {
+   "jobs": [
+    {
+     "name": "build",
+     "step_count": 2
+    }
+   ],
+   "workflow": "stub.yml"
+  }
+ ],
+ "docs": [
+  {
+   "file": "GUIDE.md",
+   "heading_count": 3,
+   "lines": 7
+  },
+  {
+   "file": "OVERVIEW.md",
+   "heading_count": 3,
+   "lines": 7
+  }
+ ],
+ "hooks": [
+  {
+   "lines": 2,
+   "name": "on-start.sh"
+  },
+  {
+   "lines": 2,
+   "name": "on-stop.sh"
+  }
+ ],
+ "limits": {
+  "desc_max": 320,
+  "skill_md_note": 4500,
+  "skill_md_note_sections": 6000
+ },
+ "lint": {
+  "note": 0,
+  "off": 0,
+  "ok": 0,
+  "ran": false,
+  "skip": 0
+ },
+ "meta": {
+  "exporter_version": "0.1.0",
+  "iso_week": "2026-W13",
+  "source_committed_at": "2026-03-26",
+  "source_kind": "stub",
+  "source_repo": "stub/claude-code",
+  "source_sha_short": "c91e2ba"
+ },
+ "redaction": {
+  "dropped": 0,
+  "renamed": 0,
+  "scrubbed_strings": 0
+ },
+ "root_scripts": [
+  {
+   "lines": 2,
+   "name": "build-stub.sh"
+  },
+  {
+   "lines": 3,
+   "name": "report-stub.sh"
+  },
+  {
+   "lines": 2,
+   "name": "tidy-stub.sh"
+  }
+ ],
+ "schema_version": 1,
+ "skills": [
+  {
+   "context": null,
+   "counts": {
+    "examples": 0,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 1,
+    "sections": 0
+   },
+   "description_chars": 42,
+   "has_sections": false,
+   "kind": "skill",
+   "model_invocable": true,
+   "name": "skill-alpha",
+   "scripts": [
+    {
+     "lines": 3,
+     "name": "probe-alpha.sh"
+    }
+   ],
+   "sections": [],
+   "skill_md_bytes": 147,
+   "tools": [],
+   "user_invocable": true
+  },
+  {
+   "context": null,
+   "counts": {
+    "examples": 0,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 0,
+    "sections": 0
+   },
+   "description_chars": 70,
+   "has_sections": false,
+   "kind": "skill",
+   "model_invocable": true,
+   "name": "skill-bravo",
+   "scripts": [],
+   "sections": [],
+   "skill_md_bytes": 197,
+   "tools": [],
+   "user_invocable": false
+  },
+  {
+   "context": null,
+   "counts": {
+    "examples": 0,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 0,
+    "sections": 0
+   },
+   "description_chars": 24,
+   "has_sections": false,
+   "kind": "skill",
+   "model_invocable": true,
+   "name": "skill-charlie",
+   "scripts": [],
+   "sections": [],
+   "skill_md_bytes": 176,
+   "tools": [
+    "Bash",
+    "Read"
+   ],
+   "user_invocable": true
+  },
+  {
+   "context": "fork",
+   "counts": {
+    "examples": 0,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 0,
+    "sections": 0
+   },
+   "description_chars": 42,
+   "has_sections": false,
+   "kind": "skill",
+   "model_invocable": true,
+   "name": "skill-delta",
+   "scripts": [],
+   "sections": [],
+   "skill_md_bytes": 161,
+   "tools": [],
+   "user_invocable": true
+  },
+  {
+   "context": null,
+   "counts": {
+    "examples": 0,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 1,
+    "sections": 0
+   },
+   "description_chars": 44,
+   "has_sections": false,
+   "kind": "skill",
+   "model_invocable": true,
+   "name": "skill-echo",
+   "scripts": [
+    {
+     "lines": 4,
+     "name": "check.sh"
+    }
+   ],
+   "sections": [],
+   "skill_md_bytes": 147,
+   "tools": [],
+   "user_invocable": true
+  },
+  {
+   "context": null,
+   "counts": {
+    "examples": 0,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 1,
+    "sections": 1
+   },
+   "description_chars": 24,
+   "has_sections": true,
+   "kind": "skill",
+   "model_invocable": true,
+   "name": "skill-foxtrot",
+   "scripts": [
+    {
+     "lines": 3,
+     "name": "probe-foxtrot.sh"
+    }
+   ],
+   "sections": [
+    {
+     "lines": 3,
+     "name": "part-one.md"
+    }
+   ],
+   "skill_md_bytes": 133,
+   "tools": [],
+   "user_invocable": true
+  },
+  {
+   "context": null,
+   "counts": {
+    "examples": 2,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 0,
+    "sections": 0
+   },
+   "description_chars": 55,
+   "has_sections": false,
+   "kind": "skill",
+   "model_invocable": true,
+   "name": "skill-golf",
+   "scripts": [],
+   "sections": [],
+   "skill_md_bytes": 158,
+   "tools": [],
+   "user_invocable": true
+  },
+  {
+   "context": null,
+   "counts": {
+    "examples": 0,
+    "fixtures": 0,
+    "other": 0,
+    "scripts": 0,
+    "sections": 0
+   },
+   "description_chars": 22,
+   "has_sections": false,
+   "kind": "skill",
+   "model_invocable": false,
+   "name": "skill-hotel",
+   "scripts": [],
+   "sections": [],
+   "skill_md_bytes": 158,
+   "tools": [],
+   "user_invocable": true
+  }
+ ],
+ "stats": {
+  "description_chars": {
+   "max": 70,
+   "median": 42,
+   "min": 22
+  },
+  "script_lines": {
+   "max": 4,
+   "median": 3,
+   "total": 17
+  },
+  "skill_md_bytes": {
+   "max": 197,
+   "median": 158,
+   "min": 133
+  }
+ },
+ "totals": {
+  "agents": 6,
+  "commits": 8,
+  "docs": 2,
+  "examples": 2,
+  "hooks": 2,
+  "merges": 1,
+  "plugins": 0,
+  "root_scripts": 3,
+  "scripts": 6,
+  "sections": 1,
+  "selftests": 0,
+  "skill_dirs": 8,
+  "skill_scripts": 3,
+  "skills": 8,
+  "tracked_files": 31,
+  "weeks": 4
+ }
+}
